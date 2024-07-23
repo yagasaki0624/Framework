@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span th:text="${name}">ダミー太郎</span><br><br>
+    Carオブジェクトのspeedプロパティを表示<br>
+    <span th:text="${car.speed}">1</span><br><br>
+
+    <div th:object="${car}">ダミー太郎<br><br>
+        車のスピード：<span th:text="*{speed}">1</span><br>
+        車のカラー：<span th:text="*{bodyColor}">1</span><br><br>
+    </div>
+
+    <span th:text="#{aaa}">1</span>
+    <span th:text="#{bbb.ccc}">1</span><br><br>
+
+    <a th:href="@{/variable-expressions?hogehoge=}+${car.speed}">スピードパラメータつきリンク！</a>
+
+</body>
+
+</html>

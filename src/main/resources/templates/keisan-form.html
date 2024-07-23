@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="total.html" th:action="@{/keisan/calc}" method="post">
+        <input type="text" name="x">
+        <select name="calculation">
+            <option value="addition">+</option>
+            <option value="subtraction">-</option>
+            <option value="multiplication">×</option>
+            <option value="division">÷</option>
+        </select>
+        <input type="text" name="y">
+        <button>送信</button>
+    </form>
+</body>
+
+</html>

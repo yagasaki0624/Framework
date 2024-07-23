@@ -16,9 +16,5 @@ public class ReceiveForm {
         this.age = age;
     }
 
-    // @Override
-    // public String toString(){
-    //     return "ReceiveForm"
-    // }
 
 }
